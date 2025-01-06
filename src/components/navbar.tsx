@@ -1,9 +1,28 @@
+'use client'
 
+import { NAV_LINKS } from "@/constants"
+import Link from "next/link"
+import { useState } from "react"
+import { AiOutlineMenu } from "react-icons/ai";
+import MobileSidebar from "./mobile-sidebar";
 
-export default function navbar() {
+export default function Navbar() {
+
+    const [openNav, setOpenNav] = useState<boolean>(false)
+
     return (
-        <nav>
-
+        <nav className="">
+            <button onClick={() => setOpenNav(true)} className="md:hidden relative top-10 left-8">
+                <AiOutlineMenu className="w-7 h-7" />
+            </button>
+            <div className="relative top-10 flex items-center justify-center max-md:hidden md:gap-5 lg:gap-10">
+                {NAV_LINKS.map((link) => {
+                    return (
+                        <Link key={link.label} href={link.href} className="text-lg text-black hover:text-blue-500 font-medium"> {link.label} </Link>
+                    )
+                })}
+            </div>
+            {openNav && <MobileSidebar setOpenNav={setOpenNav} />}
         </nav>
     )
 }
