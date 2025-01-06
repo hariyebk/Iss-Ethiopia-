@@ -3,14 +3,14 @@ import Image from "next/image";
 
 export default function ProductsAndServices() {
     return (
-        <section className="max-sm:my-24 sm:my-32 min-h-screen">
-            <div className="flex flex-col items-center mx-auto max-lg:max-w-[800px] lg:max-w-[900px]">
+        <section className="max-md:my-20 md:my-32">
+            <div className="flex flex-col items-center mx-auto lg:max-w-[850px]">
                 <h2 className="max-sm:text-2xl sm:text-3xl lg:text-4xl text-black text-center font-medium "> Products and Services </h2>
                 <div className="max-sm:mt-10 sm:mt-16 flex items-center justify-start max-w-full pl-10 pr-5">
                     <ul>
                         <li className="text-black font-normal">
                             <h3 className="max-md:text-lg md:text-xl"> 1. Geospacial Solutions and Services </h3>
-                            <div className="pt-7 max-md:pl-3 md:pl-10">
+                            <div className="pt-7 md:pl-10">
                                 <h4 className="max-sm:text-base sm:text-lg"> A. Geospacial Consultancy </h4>
                                 <ul className="pt-5 max-md:pl-2 md:pl-6 max-sm:text-sm sm:text-base font-normal">
                                     <li className="max-w-[780px] leading-7"> I.&nbsp; Needs Assessment for implementing a Geographic Information System; including defining organizational staffing, system hardware and software requirments. </li>
@@ -23,7 +23,7 @@ export default function ProductsAndServices() {
                         </li>
                         <li className="text-black font-normal mt-10">
                             <h3 className="max-md:text-lg md:text-xl"> 2. Geospacial and AEC Software </h3>
-                            <div className="pt-7 max-md:pl-3 md:pl-10">
+                            <div className="pt-7 md:pl-10">
                                 <h4 className="max-sm:text-base sm:text-lg"> A. Esri Products </h4>
                                 <ul className="pt-5 max-md:pl-2 md:pl-10 max-sm:text-sm sm:text-base font-normal">
                                     <li> I.&nbsp; ARCGIS Pro </li>
@@ -35,7 +35,7 @@ export default function ProductsAndServices() {
                         </li>
                         <li className="text-black font-normal mt-7">
                             <h3 className="max-md:text-lg md:text-xl"> 3. Remote Sensing and Satellite Imagery </h3>
-                            <div className="pt-7 max-md:pl-3 md:pl-10">
+                            <div className="pt-7 md:pl-10">
                                 <h4 className="max-sm:text-base sm:text-lg"> A. 25cm imagery </h4>
                                 <h4 className="max-sm:text-base sm:text-lg mt-4"> B. 30cm imagery </h4>
                                 <h4 className="max-sm:text-base sm:text-lg mt-4"> B. 50cm imagery </h4>
@@ -45,7 +45,7 @@ export default function ProductsAndServices() {
                         </li>
                         <li className="text-black font-normal mt-10">
                             <h3 className="max-md:text-lg md:text-xl"> 3. Training </h3>
-                            <div className="pt-7 max-md:pl-3 md:pl-10">
+                            <div className="pt-7 md:pl-10">
                                 <h4 className="max-sm:text-base sm:text-lg"> A. GIS Training </h4>
                                 <h4 className="max-sm:text-base max-md:pl-3 sm:text-lg mt-4"> B. Autodesk Training will be coming soon </h4>
                             </div>

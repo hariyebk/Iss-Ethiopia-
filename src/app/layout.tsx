@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${nunito.className} antialiased bg-[#f2f1f6]`}>
         <Navbar />
-        {children}
+          {children}
         <Footer />
       </body>
     </html>
