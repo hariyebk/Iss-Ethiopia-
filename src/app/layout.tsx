@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Crypto Price Tracker",
-  description: "Get the latest cryptocurrency market data",
+  title: "Iss Ethiopia",
+  description: "",
 };
 
 export default function RootLayout({
