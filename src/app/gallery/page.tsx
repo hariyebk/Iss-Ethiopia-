@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Gallery() {
     return (
-        <main className='max-md:my-20 md:my-32'>
+        <main className='min-h-screen max-md:py-20 md:py-32'>
             <h2 className="max-sm:text-3xl sm:text-3xl lg:text-4xl text-black text-center font-medium "> Gallery </h2>
             <div className="max-w-[1200px] mx-auto mt-8">
                 <div className="mt-7 flex flex-wrap items-start justify-center max-sm:px-6 gap-4">

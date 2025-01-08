@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function AboutUs() {
     return (
-        <main className="max-md:my-20 md:my-32">
+        <main className="min-h-screen max-md:py-20 md:py-32">
             <h2 className="max-sm:text-3xl sm:text-3xl lg:text-4xl text-black text-center font-medium "> About Us </h2>
             <div className="max-sm:mt-7 sm:mt-10 flex items-center justify-center w-full">
                 <div className="max-lg:px-10 lg:max-w-[800px] max-md:text-base md:text-lg text-black text-justify font-normal">

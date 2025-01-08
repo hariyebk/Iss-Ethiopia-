@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ProductsAndServices() {
     return (
-        <section className="max-md:my-20 md:my-32">
+        <section className="min-h-screen max-md:py-20 md:my-32">
             <div className="flex flex-col items-center mx-auto lg:max-w-[850px]">
                 <h2 className="max-sm:text-2xl sm:text-3xl lg:text-4xl text-black text-center font-medium "> Products and Services </h2>
                 <div className="max-sm:mt-10 sm:mt-16 flex items-center justify-start max-w-full pl-10 pr-5">
