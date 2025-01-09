@@ -18,6 +18,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        'mid': '928px',
+      }
     },
   },
   plugins: [],
