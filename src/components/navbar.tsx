@@ -11,16 +11,18 @@ export default function Navbar() {
     const [openNav, setOpenNav] = useState<boolean>(false)
 
     return (
-        <nav className="">
-            <button onClick={() => setOpenNav(true)} className="md:hidden relative top-10 left-8">
-                <AiOutlineMenu className="w-7 h-7" />
+        <nav>
+            <button onClick={() => setOpenNav(true)} className="md:hidden relative top-10 left-6">
+                <AiOutlineMenu className="w-7 h-5" />
             </button>
-            <div className="relative top-10 flex items-center justify-center max-md:hidden md:gap-5 lg:gap-10">
-                {NAV_LINKS.map((link) => {
-                    return (
-                        <Link key={link.label} href={link.href} className="text-lg text-black hover:text-blue-500 font-medium"> {link.label} </Link>
-                    )
-                })}
+            <div className="relative top-10">
+                <div className="flex items-center justify-center max-md:hidden md:gap-5 lg:gap-10">
+                    {NAV_LINKS.map((link) => {
+                        return (
+                            <Link key={link.label} href={link.href} className="text-lg text-black hover:text-blue-500 font-medium"> {link.label} </Link>
+                        )
+                    })}
+                </div>
             </div>
             {openNav && <MobileSidebar setOpenNav={setOpenNav} />}
         </nav>
