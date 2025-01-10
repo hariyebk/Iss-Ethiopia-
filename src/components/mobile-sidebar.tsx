@@ -16,7 +16,7 @@ export default function MobileSidebar({setOpenNav} : MobileSidebarNavProps) {
     }  
 
     return (
-        <section className="absolute inset-0 top-0 left-0 w-[220px] max-h-screen bg-[#252a2e] pl-8 py-7 flex flex-col items-start gap-10">
+        <section className="absolute inset-0 top-0 left-0 z-10 w-[220px] max-h-screen bg-[#252a2e] pl-8 py-7 flex flex-col items-start gap-10">
         <button onClick={() => setOpenNav(false)} className="w-full flex justify-end focus-visible:outline-none">
             <IoCloseCircleSharp className="w-6 h-6 text-white mr-7" />
         </button>

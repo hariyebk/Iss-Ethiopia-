@@ -19,7 +19,8 @@ export default {
         foreground: "var(--foreground)",
       },
       screens: {
-        'mid': '928px',
+        'mid': '1021px',
+        'aboveMid': '1136px'
       }
     },
   },

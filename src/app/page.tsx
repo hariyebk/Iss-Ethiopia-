@@ -1,6 +1,7 @@
-import Expertise from "@/components/Expertise";
-import Hero from "@/components/Hero";
-import Partnerships from "@/components/Partnerships";
+import Expertise from "@/components/expertise";
+import Hero from "@/components/hero";
+import Partnerships from "@/components/partnerships";
+import WhyChooseGis from "@/components/why-choose-gis";
 
 export default function Home() {
 return (
@@ -8,6 +9,7 @@ return (
         <Hero />
         <Expertise />
         <Partnerships />
+        <WhyChooseGis />
     </main>
 );
 }
