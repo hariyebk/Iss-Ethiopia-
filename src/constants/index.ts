@@ -46,3 +46,8 @@ export const GALLERY = [
     '/gallery/14.webp',
     '/gallery/15.webp',
 ]
+
+export const MAP_CAROUSAL = [
+    '/map-1.png',
+    '/map-2.png'
+]
