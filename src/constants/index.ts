@@ -32,7 +32,7 @@ export const NAV_LINKS = [
 export const GALLERY = [
     '/gallery/1.webp',
     '/gallery/2.webp',
-    '/gallery/3.webp',
+    '/gallery/3.jpg',
     '/gallery/4.webp',
     '/gallery/5.webp',
     '/gallery/6.webp',
@@ -50,4 +50,19 @@ export const GALLERY = [
 export const MAP_CAROUSAL = [
     '/map-1.png',
     '/map-2.png'
+]
+
+export const EVENTS = [
+    {
+        title: "Third Year of the First Ethiopian Remote Sensing Satellite (ETRSS-1) in orbit",
+        text: "ISS was one of the invited companies by Space Science and Geospatial Institute (SSGI) to participate as an exhibitor based on our involvement in initiatives related to digital mapping and to join in its celebration of the Third Year of the First Ethiopian Remote Sensing Satellite (ETRSS-1) in orbit, and the International Geographic Information System (GIS) Day on December 26th,2022 at the newly inaugurated Ethiopia Museum of Art and Science.",
+        image: "/events/space-science.jpg",
+        alt: "space science exhibition"
+    },
+    {
+        title: "The 2022 Ethiopia User Group Conference",
+        text: "The Ethiopia User Group Conference brings together GIS users from across Ethiopia and beyond to share their experiences and learn the latest in Esri technology. The event was held in Addis Ababa, Ethiopia on October 28,2022.",
+        image: "/events/user-group-conference.gif",
+        alt: "user group conference"
+    }
 ]

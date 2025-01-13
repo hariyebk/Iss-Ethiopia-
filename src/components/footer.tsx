@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Footer(){
     return (
-        <footer className='relative inset-0 bottom-0 w-full h-[200px] bg-[#252a2e]'>
+        <footer className='relative inset-0 bottom-0 w-full h-[200px] bg-[#000080]'>
             <div className="flex flex-col items-center justify-center w-full h-full">
                 <h4 className="text-white max-sm:text-sm sm:text-base max-sm:px-6 text-wrap text-center max-sm:max-w-[400px] sm:max-w-[400px] md:max-w-[700px] leading-7"> Copyright © 2025 &nbsp; ISS Ethiopia (Information Systems Services PLC). &nbsp; All Rights Reserved. </h4>
                 <div className="mt-8">

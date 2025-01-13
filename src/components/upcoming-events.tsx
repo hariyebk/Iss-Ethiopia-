@@ -37,7 +37,9 @@ export default function UpcomingEvents(){
                 <h1 className='text-xl font-semibold'> Upcoming Events </h1>
             </div>
             <div className="flex flex-col gap-4">
-                {events.map((event) => {
+                <h3 className="text-base text-center py-5"> No Upcoming Events. </h3>
+                {/* TODO: For Future Upcoming Events */}
+                {/* {events.map((event) => {
                     return (
                         <div key={event.id} className="p-5 rounded-md border-2 border-gray-100 border-t-4 odd:border-t-sky even:border-t-purple"> 
                             <div className="flex items-center justify-between">
@@ -47,7 +49,7 @@ export default function UpcomingEvents(){
                             <p className="mt-2 text-gray-400 text-sm"> {event.description} </p>
                         </div>
                     )
-                })}
+                })} */}
             </div>
         </section>
     )

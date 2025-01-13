@@ -24,7 +24,9 @@ export default function Navbar() {
                     })}
                 </div>
             </div>
-            {openNav && <MobileSidebar setOpenNav={setOpenNav} />}
+            <div className="md:hidden">
+                {openNav && <MobileSidebar setOpenNav={setOpenNav} />}
+            </div>
         </nav>
     )
 }
