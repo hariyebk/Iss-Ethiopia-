@@ -20,7 +20,9 @@ export default {
       },
       screens: {
         'mid': '1021px',
-        'aboveMid': '1136px'
+        'aboveMid': '1136px',
+        'midlarge': '1264px',
+        'large': '1324px',
       }
     },
   },

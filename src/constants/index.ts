@@ -55,7 +55,7 @@ export const MAP_CAROUSAL = [
 export const EVENTS = [
     {
         title: "Third Year of the First Ethiopian Remote Sensing Satellite (ETRSS-1) in orbit",
-        text: "ISS was one of the invited companies by Space Science and Geospatial Institute (SSGI) to participate as an exhibitor based on our involvement in initiatives related to digital mapping and to join in its celebration of the Third Year of the First Ethiopian Remote Sensing Satellite (ETRSS-1) in orbit, and the International Geographic Information System (GIS) Day on December 26th,2022 at the newly inaugurated Ethiopia Museum of Art and Science.",
+        text: "ISS was invited by SSGI to exhibit at the celebration of ETRSS-1's third year in orbit and International GIS Day on December 26th, 2022, at the Ethiopia Museum of Art and Science, showcasing our digital mapping initiatives",
         image: "/events/space-science.jpg",
         alt: "space science exhibition"
     },
@@ -64,5 +64,11 @@ export const EVENTS = [
         text: "The Ethiopia User Group Conference brings together GIS users from across Ethiopia and beyond to share their experiences and learn the latest in Esri technology. The event was held in Addis Ababa, Ethiopia on October 28,2022.",
         image: "/events/user-group-conference.gif",
         alt: "user group conference"
+    },
+    {
+        title: "The Cornerstone Partner certificate",
+        text: "Mrs Aster Solomon (General Manager of ISS) receiving the Cornerstone Partner certificate from Mr. Jack Dangermond (left) President of Esri",
+        image: "/events/cornerstone-partner-certificate.jpg",
+        alt: "cornerstone partner certificate"
     }
 ]
