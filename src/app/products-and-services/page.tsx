@@ -1,59 +1,60 @@
-import Image from "next/image";
+"use client"
 
+import AesSoftwares from "@/components/aes-softwares";
+import GssProducts from "@/components/gss-products";
+import ProductsServices from "@/components/p&s";
+import Description from "@/components/ps-description";
+import SatelliteImagery from "@/components/satellite-imagery";
+import Training from "@/components/training";
+import { TABS } from "@/constants";
+import { useState } from "react";
 
-export default function ProductsAndServices() {
+export default function ProductsAndServices(){
+    const [active, setActive] = useState<TABS>("Geospacial Solutions and Services")
+
     return (
-        <section className="min-h-screen max-md:py-20 md:my-32">
-            <div className="flex flex-col items-center mx-auto lg:max-w-[850px]">
-                <h2 className="max-sm:text-2xl sm:text-3xl lg:text-4xl text-black text-center font-medium "> Products and Services </h2>
-                <div className="max-sm:mt-10 sm:mt-16 flex items-center justify-start max-w-full pl-10 pr-5">
-                    <ul>
-                        <li className="text-black font-normal">
-                            <h3 className="max-md:text-lg md:text-xl"> 1. Geospacial Solutions and Services </h3>
-                            <div className="pt-7 md:pl-10">
-                                <h4 className="max-sm:text-base sm:text-lg"> A. Geospacial Consultancy </h4>
-                                <ul className="pt-5 max-md:pl-2 md:pl-6 max-sm:text-sm sm:text-base font-normal">
-                                    <li className="max-w-[780px] leading-7"> I.&nbsp; Needs Assessment for implementing a Geographic Information System; including defining organizational staffing, system hardware and software requirments. </li>
-                                    <li className="pt-3"> II.&nbsp; Geodatabase design and development. </li>
-                                </ul>
-                                <h4 className="max-sm:text-base sm:text-lg mt-4"> B. Topographical Surveying </h4>
-                                <h4 className="max-sm:text-base sm:text-lg mt-4"> C. Geolocation Apps development </h4>
-                            </div>
-                            <Image src="/image1.png" alt="topogrphical surveying" width={500} height={400} className="object-cover mt-6 max-sm:rounded-sm sm:rounded-md max-sm:w-full max-sm:h-auto" />
-                        </li>
-                        <li className="text-black font-normal mt-10">
-                            <h3 className="max-md:text-lg md:text-xl"> 2. Geospacial and AEC Software </h3>
-                            <div className="pt-7 md:pl-10">
-                                <h4 className="max-sm:text-base sm:text-lg"> A. Esri Products </h4>
-                                <ul className="pt-5 max-md:pl-2 md:pl-10 max-sm:text-sm sm:text-base font-normal">
-                                    <li> I.&nbsp; ARCGIS Pro </li>
-                                    <li className="pt-3"> II.&nbsp; ARCGIS Online </li>
-                                    <li className="pt-3"> III.&nbsp; ARCGIS Enterprise  </li>
-                                </ul>
-                                <h4 className="max-sm:text-base sm:text-lg mt-4"> B. Autodesk Products </h4>
-                            </div>
-                        </li>
-                        <li className="text-black font-normal mt-7">
-                            <h3 className="max-md:text-lg md:text-xl"> 3. Remote Sensing and Satellite Imagery </h3>
-                            <div className="pt-7 md:pl-10">
-                                <h4 className="max-sm:text-base sm:text-lg"> A. 25cm imagery </h4>
-                                <h4 className="max-sm:text-base sm:text-lg mt-4"> B. 30cm imagery </h4>
-                                <h4 className="max-sm:text-base sm:text-lg mt-4"> B. 50cm imagery </h4>
-                                <h4 className="max-sm:text-base sm:text-lg mt-4"> B. 75cm imagery </h4>
-                            </div>
-                            <Image src="/image3.png" alt="75cm imagery" width={500} height={400} className="object-cover mt-6 max-sm:rounded-sm sm:rounded-md max-sm:w-full max-sm:h-auto" />
-                        </li>
-                        <li className="text-black font-normal mt-10">
-                            <h3 className="max-md:text-lg md:text-xl"> 3. Training </h3>
-                            <div className="pt-7 md:pl-10">
-                                <h4 className="max-sm:text-base sm:text-lg"> A. GIS Training </h4>
-                                <h4 className="max-sm:text-base max-md:pl-3 sm:text-lg mt-4"> B. Autodesk Training will be coming soon </h4>
-                            </div>
-                            <Image src="/image4.png" alt="training" width={500} height={350} className="object-cover mt-6 max-sm:rounded-sm sm:rounded-md" />
-                        </li>
-                    </ul>
+        <section className="min-h-screen max-md:py-20 md:mt-32 md:mb-24">
+            <div className="max-w-full">
+                <div className="flex justify-center">
+                    <div className="max-lg:hidden flex flex-wrap items-center justify-between gap-16 text-base text-black font-medium font-sans">
+                        <div>
+                            <button onClick={() => setActive("Geospacial Solutions and Services")}> Geospacial Solutions and Services </button>
+                            {active === "Geospacial Solutions and Services" && <hr className="w-[250px] mt-2 border-t-2 border-blue-700 rounded-sm" />}
+                        </div>
+                        <div>
+                            <button onClick={() => setActive("Geospacial and AEC Software")}> Geospacial and AEC Software </button>
+                            {active === "Geospacial and AEC Software" && <hr className="w-[220px] mt-2 border-t-2 border-blue-700 rounded-sm" />}
+                        </div>
+                        <div>
+                            <button onClick={() => setActive("Remote Sensing and Satellite Imagery")}> Remote Sensing and Satellite Imagery </button>
+                            {active === "Remote Sensing and Satellite Imagery" && <hr className="w-[280px] mt-2 border-t-2 border-blue-700 rounded-sm" />}
+                        </div>
+                        <div>
+                            <button onClick={() => setActive("Training")}> Training </button>
+                            {active === "Training" && <hr className="w-[60px] mt-2 border-t-2 border-blue-700 rounded-sm" />}
+                        </div>
+                    </div>
+                </div>
+                <div className="flex justify-center mt-16 max-lg:hidden">
+                    {active === "Geospacial Solutions and Services" && <Description image="/gis.jpg" alt="gis" title="Geospacial Solutions and Services" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." children={<GssProducts />} />}
+                    {active === "Geospacial and AEC Software" && <Description image="/gis.jpg" alt="gis" title="Geospacial and AEC Software" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." children={<AesSoftwares />} />}
+                    {active === "Remote Sensing and Satellite Imagery" && <Description image="/gis.jpg" alt="gis" title="Remote Sensing and Satellite Imagery" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." children={<SatelliteImagery />} />}
+                    {active === "Training" && <Description image="/gis.jpg" alt="gis" title="Training" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." children={<Training />} />}
+                </div>
+                <div className="lg:hidden">
+                    <Description image="/gis.jpg" alt="gis" title="Geospacial Solutions and Services" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." children={<GssProducts />} />
+                    <div className="mt-16">
+                        <Description image="/gis.jpg" alt="gis" title="Geospacial and AEC Software" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." children={<AesSoftwares />} />
+                    </div>
+                    <div className="mt-16">
+                        <Description image="/gis.jpg" alt="gis" title="Remote Sensing and Satellite Imagery" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." children={<SatelliteImagery />} />
+                    </div>
+                    <div className="mt-16">
+                        <Description image="/gis.jpg" alt="gis" title="Training" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." children={<Training />} />
+                    </div>
                 </div>
             </div>
+            {/* <ProductsServices /> */}
         </section>
     )
 }

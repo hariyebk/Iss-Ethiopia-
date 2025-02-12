@@ -72,3 +72,24 @@ export const EVENTS = [
         alt: "cornerstone partner certificate"
     }
 ]
+
+export type TABS = "Geospacial Solutions and Services" | "Geospacial and AEC Software" | "Remote Sensing and Satellite Imagery" | "Training"
+
+export const PRODUCTS_AND_SERVICES = [
+    {
+        Main: "Geospacial Solutions and Services",
+        sub: ["Geospacial Consultancy", "Topographical Surveying", "Geolocation Apps development"]
+    },
+    {
+        Main: "Geospacial and AEC Software",
+        sub: [" Esri Productsy", "Autodesk Products"]
+    },
+    {
+        Main: "Remote Sensing and Satellite Imagery",
+        sub: ["25cm imagery", "30cm imagery", "50cm imagery", "75cm imagery"]
+    },
+    {
+        Main: "Training",
+        sub: ["GIS Training", "Autodesk Training will be coming soon"]
+    }
+]
